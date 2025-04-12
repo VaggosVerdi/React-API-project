@@ -1,0 +1,32 @@
+:root
+    --primaryBorder: #FF645D
+    --primaryBackground: #FFDAC6
+    --secondaryBorder: #dad2c6
+    --secondaryBackground: #FFF8EF
+    --black: #000000
+    --fontInter: "Inter", sans-serif
+html, body
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+table, th, td
+    border: 1px solid var(--black)
+table
+    border-collapse: collapse
+    border-spacing: 0
+    overflow: auto
+    min-width: 400px
+    height: auto
+th, td
+    padding: 5px
+.btnSubmit
+    font-family: var(--fontInter)
+    color: var(--black)
+    background-color: var(--primaryBackground)
+    border: 1px solid var(--primaryBorder)
+    border-radius: 15px
+    padding: 10px 25px
+    
+    &:hover
+        background-color: var(--secondaryBackground)
+        border-color: var(--secondaryBorder)
