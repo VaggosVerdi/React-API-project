@@ -4,21 +4,45 @@
     --secondaryBorder: #dad2c6
     --secondaryBackground: #FFF8EF
     --black: #000000
+    --white: #ffffff
     --fontInter: "Inter", sans-serif
+
 html, body
     margin: 0
     padding: 0
     box-sizing: border-box
+
+/*! Table styling */
+
 table, th, td
     border: 1px solid var(--black)
+
 table
     border-collapse: collapse
     border-spacing: 0
     overflow: auto
     min-width: 400px
     height: auto
+
 th, td
     padding: 5px
+
+.tableId
+    cursor: pointer
+    width: 50px
+    user-select: none
+
+/*! when the #table nav-link is pressed
+    this gives enough space for the h2
+    to be visible */
+
+#table
+    scroll-margin-top: 50px
+
+/*! End table */
+
+/*! Main button styling */
+
 .btnSubmit
     font-family: var(--fontInter)
     color: var(--black)
@@ -30,3 +54,19 @@ th, td
     &:hover
         background-color: var(--secondaryBackground)
         border-color: var(--secondaryBorder)
+
+/*! End main button */
+
+/*! Simple menu and nav-link styling */
+
+.menu
+    display: flex
+    justify-content: center
+    padding: 10px 0 10px
+    background-color: var(--white)
+
+.nav-link
+    &:hover
+        text-decoration: underline
+
+/*! End menu */
